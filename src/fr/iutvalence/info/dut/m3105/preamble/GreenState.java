@@ -9,15 +9,14 @@ public class GreenState implements StateTrafficSignal {
 	}
 
 	@Override
-	public int getRemainingTime(TrafficSignal context){
-		
-		return 0;
+	public int getRemainingTime(TrafficSignal context){	
+		return this.stateRemainingTime;
 	}
 	
 	@Override
 	public void pressButton(TrafficSignal context){
-		if ()
-			
+		if (this.stateRemainingTime > 2)
+			this.stateRemainingTime = 2;			
 	}
 	
 	@Override
