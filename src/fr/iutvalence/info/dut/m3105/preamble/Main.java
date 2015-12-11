@@ -9,7 +9,7 @@ public class Main
 	{
 		Random rng = new Random();
 		
-		TrafficSignal trafficSignal = new TrafficSignal();
+		ContextTrafficSignal trafficSignal = new TrafficSignal();
 		trafficSignal.start();
 		
 		while (true)

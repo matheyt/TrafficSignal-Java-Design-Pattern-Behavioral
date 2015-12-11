@@ -1,7 +1,7 @@
 package fr.iutvalence.info.dut.m3105.preamble;
 
-public class TrafficSignal extends Thread
-{
+public class TrafficSignal extends Thread implements ContextTrafficSignal {
+	
 	private final static int BUTTON_THRESHOLD_IN_SECONDS = 2;
 	
 	private TrafficSignalState state;
