@@ -2,9 +2,15 @@ package fr.iutvalence.info.dut.m3105.preamble;
 
 public class RedState implements StateTrafficSignal {
 
+private int stateRemainingTime;
+	
+	public RedState() {
+		this.stateRemainingTime = 10;
+	}
+
 	@Override
-	public void getRemainingTime(TrafficSignal context){
-		
+	public int getRemainingTime(TrafficSignal context){	
+		return this.stateRemainingTime;
 	}
 	
 	@Override
@@ -14,7 +20,7 @@ public class RedState implements StateTrafficSignal {
 	
 	@Override
 	public void switchState(TrafficSignal context) {
-		context.switchToState(new GreenState());
+		context.switchToState(TrafficSignalState.GREEN);
 	}
 
 }

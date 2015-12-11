@@ -21,7 +21,7 @@ public class GreenState implements StateTrafficSignal {
 	
 	@Override
 	public void switchState(TrafficSignal context) {
-		context.switchToState(TrafficSignalState.GREEN/*new OrangeState()*/);
+		context.switchToState(TrafficSignalState.ORANGE);
 	}
 	
 }
